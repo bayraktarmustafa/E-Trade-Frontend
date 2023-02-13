@@ -16,6 +16,7 @@
     placeholder="Aramak İstediğiniz Ürünü Yazınız "
   />
 </div>
+
 <div *ngIf="filterText"   class="alert alert-warning">
 {{filterText}} Aradınız
 </div>
@@ -31,7 +32,7 @@
       <th>Stok Adedi</th>
     </tr>
   </thead>
-  <tr *ngFor="let product of products">
+  <tr *ngFor="let product of products | filterPipe:filterText">
     <td>{{ product.productId }}</td>
     <td>{{ product.productName | uppercase }}</td>
     <td>{{ product.categoryId }}</td>
