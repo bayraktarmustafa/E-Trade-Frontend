@@ -16,6 +16,8 @@ import { ToastrModule } from 'ngx-toastr';
 import { CartSummaryComponent } from './components/cart-summary/cart-summary.component';
 import { ProductAddComponent } from './components/product-add/product-add.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { LoginComponent } from './components/login/login.component';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     VatAddedPipe,
     FilterPipePipe,
     CartSummaryComponent,
-    ProductAddComponent
+    ProductAddComponent,
+    LoginComponent,
+    
   ],
   imports: [
     BrowserModule,
